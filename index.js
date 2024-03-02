@@ -15,15 +15,23 @@
 //}
 //wrapGifts(gifts);
 
-const origArray = ["Charlie", "Samip", "Ali"];
-const newArray = [];
+const origArray = ["Gaudalupe", "Ollie", "Aki"];
     
 
 function writeCards(origArray) {
+    const newArray = [];
     for (let i = 0; i < origArray.length; i++) {
-         console.log(`Thank you, ${origArray[i]}, for the wonderful birthday gift!`);
+         newArray.push(`Thank you, ${origArray[i]}, for the wonderful surprise gift!`);
     }
 
     return newArray;
 }
 writeCards(origArray);
+
+function countDown() {
+    let i=10;
+    while(i>=0) {
+        console.log(i);
+        i--;
+    }
+}
